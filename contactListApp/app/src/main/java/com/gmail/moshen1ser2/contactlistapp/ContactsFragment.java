@@ -16,14 +16,13 @@ import androidx.fragment.app.ListFragment;
 public class ContactsFragment extends ListFragment {
 
     public static final Contact[] contacts = {
-            /** #FAACAC new Contact("Слесарь Михаил", "89888888888", "89727272888", 123),*/
-            new Contact("Подсобник Толя", "89812345678", "89887654321", 123)
+            new Contact("Петрович", "89812345678", "89887654321", 123)
     };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle("Список Контактов");
+        /**getActivity().setTitle("Список Контактов");*/
         ArrayAdapter<Contact> contactAdapter = new ArrayAdapter<Contact>(getActivity(), 0, contacts) {
 
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

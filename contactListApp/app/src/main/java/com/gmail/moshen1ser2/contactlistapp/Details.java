@@ -14,11 +14,11 @@ import android.widget.TextView;
 
 public class Details extends Fragment {
     static Details newInstance(int index) {
-        Details f = new Details();
+        Details fragment = new Details();
         Bundle args = new Bundle();
         args.putInt("index", index);
-        f.setArguments(args);
-        return f;
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Nullable
