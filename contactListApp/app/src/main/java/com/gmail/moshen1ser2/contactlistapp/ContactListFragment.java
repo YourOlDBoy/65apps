@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.fragment.app.ListFragment;
 
-public class ContactsFragment extends ListFragment {
+public class ContactListFragment extends ListFragment {
 
     public static final Contact[] contacts = {
             new Contact("Петрович", "89812345678", "89887654321", 123)
@@ -22,7 +22,6 @@ public class ContactsFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /**getActivity().setTitle("Список Контактов");*/
         ArrayAdapter<Contact> contactAdapter = new ArrayAdapter<Contact>(getActivity(), 0, contacts) {
 
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -41,7 +40,7 @@ public class ContactsFragment extends ListFragment {
 
     @Override
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
-        Details detailsFragment = Details.newInstance((int) id);
+        ContactDetailsFragment detailsFragment = ContactDetailsFragment.newInstance((int) id);
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.container, detailsFragment).addToBackStack(null);
         transaction.commit();

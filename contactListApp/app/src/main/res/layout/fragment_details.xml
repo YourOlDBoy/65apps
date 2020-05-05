@@ -5,18 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAACAC"
-    tools:context=".Details">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:text="....."
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number2" />
+    tools:context=".ContactDetailsFragment">
 
     <ImageView
         android:id="@+id/imageView"
@@ -30,79 +19,77 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="30dp"
-        android:text="TextView"
+        android:text="name"
         android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/number1"
+        app:layout_constraintStart_toEndOf="@id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/number1"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="number1"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
         android:id="@+id/number2"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="number2"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number1" />
 
     <TextView
         android:id="@+id/e-mail1"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
         android:text="firstemail@gmail.com"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/number2" />
 
     <TextView
         android:id="@+id/e-mail2"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
         android:text="secondemail@gmail.com"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e-mail1" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="362dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:text="....."
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/e-mail2" />
-
-    <TextView
         android:id="@+id/description"
-        android:layout_width="362dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="100dp"
         android:text="Описание"
         android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/e-mail2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         if(savedInstanceState == null) {
             FragmentManager manager = getSupportFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();
-            ContactsFragment fragment = new ContactsFragment();
+            ContactListFragment fragment = new ContactListFragment();
             transaction.add(R.id.container, fragment);
             transaction.commit();
         }

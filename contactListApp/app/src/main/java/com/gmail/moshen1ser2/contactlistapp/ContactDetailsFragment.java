@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class Details extends Fragment {
-    static Details newInstance(int index) {
-        Details fragment = new Details();
+public class ContactDetailsFragment extends Fragment {
+    static ContactDetailsFragment newInstance(int index) {
+        ContactDetailsFragment fragment = new ContactDetailsFragment();
         Bundle args = new Bundle();
         args.putInt("index", index);
         fragment.setArguments(args);
@@ -30,9 +30,9 @@ public class Details extends Fragment {
         TextView contactName = (TextView) view.findViewById(R.id.name);
         TextView firstContactNumber = (TextView) view.findViewById(R.id.number1);
         TextView secondContactNumber = (TextView) view.findViewById(R.id.number2);
-        contactName.setText(ContactsFragment.contacts[index].getName());
-        firstContactNumber.setText(ContactsFragment.contacts[index].getNumber1());
-        secondContactNumber.setText(ContactsFragment.contacts[index].getNumber2());
+        contactName.setText(ContactListFragment.contacts[index].getName());
+        firstContactNumber.setText(ContactListFragment.contacts[index].getNumber1());
+        secondContactNumber.setText(ContactListFragment.contacts[index].getNumber2());
         return view;
     }
 }
